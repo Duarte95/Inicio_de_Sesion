@@ -1,0 +1,24 @@
+.inicio_sesion {
+  position: relative;
+}
+
+.contenedor_mensaje {
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+  border: 3px solid var(--gradient2-end);
+  box-shadow: 0 0px 10px 2px var(--gradient2-start);
+}
+
+.texto {
+  color: #555555;
+  font-family: system-ui;
+  font-weight: bold;
+  text-align: center;
+}
+
+.valido {
+  width: 80px;
+  height: 80px;
+  border: 3px solid var(--gradient2-end);
+}

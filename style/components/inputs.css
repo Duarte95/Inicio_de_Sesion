@@ -1,0 +1,60 @@
+.labels {
+  font-family: system-ui;
+  font-weight: bold;
+  color: #555555;
+  align-self: start;
+  letter-spacing: 3px;
+  margin: 0 0 15px 5px;
+}
+
+.contenedor_usuario,
+.contenedor_clave {
+  width: 206px;
+  height: 41px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.usuario,
+.clave {
+  width: 202px;
+  height: 37px;
+  border-radius: 15px;
+  border-style: none;
+  font-weight: bold;
+  font-family: system-ui;
+  background-color: #292929;
+  color: #555555;
+  box-sizing: border-box;
+  position: absolute;
+  text-indent: 10px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  outline: none;
+}
+
+.back_usuario,
+.back_clave {
+  display: grid;
+  place-content: center;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 206px;
+  height: 41px;
+  border-radius: 15px;
+  box-shadow: 0 0px 10px 2px var(--gradient-start);
+  overflow: hidden;
+  z-index: 1;
+  transition: 2s ease;
+}
+
+.back {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, var(--gradient-start), var(--gradient-end));
+  animation: rotar 2s linear infinite;
+  transition: 1s ease;
+}

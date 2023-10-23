@@ -1,0 +1,23 @@
+.contenedor_foto,
+.foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.contenedor_foto {
+  box-shadow: 0 0px 10px 2px var(--gradient-start);
+  border: 3px solid var(--gradient-end);
+  margin-bottom: 15px;
+  transition: 1s ease;
+}
+
+.foto {
+  background-image: url(../../assets/usuario.png);
+  background-repeat: no-repeat;
+  background-position: 0px 12px;
+  background-size: cover;
+  filter: invert();
+  box-sizing: border-box;
+  overflow: hidden;
+}
