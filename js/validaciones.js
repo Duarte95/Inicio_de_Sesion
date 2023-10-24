@@ -22,7 +22,7 @@ const validarUsuario = () => {
 user.addEventListener("input", () => {
   setTimeout(() => {
     if (validarUsuario()) {
-      foto.style.backgroundImage = `url(${imagen})`;
+      foto.style.backgroundImage = `url(${imagen})`; //ver si es posible ajustar dentro de color verde
       verde();
     } else if (user.value.length > 0) {
       blanco();
