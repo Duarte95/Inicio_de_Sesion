@@ -9,7 +9,19 @@ export const cuentas = [
     clave: "Centeno98",
     foto: "../assets/Sariangel.png",
   },
-  { usuario: "antony", clave: "Duarte95", foto: "../assets/FeNoXs.jpg" },
+  { usuario: "antony", 
+  clave: "Duarte95", 
+  foto: url("../assets/FeNoXs.jpg") },
+  {
+    usuario: "eydeam",
+    clave: "Leyva12",
+    foto: "",
+  },
+  {
+    usuario: "emerson",
+    clave:"Rolon97",
+    foto:"",
+  }
 ];
 
 /*

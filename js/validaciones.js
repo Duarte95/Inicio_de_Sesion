@@ -6,6 +6,7 @@ const user = document.querySelector("[data-usuario]");
 const pass = document.querySelector("[data-clave]");
 const foto = document.querySelector("[data-foto]");
 const msg = document.querySelector("[data-span]");
+const fotoPredeterminada = foto.style.backgroundImage = "url(../../assets/usuario.png)";
 let imagen; //para almacenar la imagen
 
 //-VALIDACION REGEX-//
@@ -16,17 +17,25 @@ const regex = /^(?=(?:[^A-Z]*[A-Z]){1})(?=(?:\D*\d){2})[A-Za-z\d]{1,10}$/;
 const validarUsuario = () => {
   return cuentas.some((cuenta) => cuenta.usuario === user.value);
 };
+const fotoPerfil = () => {
+  return cuentas.some((perfil) => {if(perfil.usuario === user.value){
+    imagen === perfil.foto;
+  } })
+}
 ///////////////////////////
 
 ///////-EVENTO INPUT-///////
 user.addEventListener("input", () => {
   setTimeout(() => {
     if (validarUsuario()) {
-      foto.style.backgroundImage = `url(${imagen})`; //ver si es posible ajustar dentro de color verde
+      fotoPerfil();
+      console.log(imagen);
       verde();
     } else if (user.value.length > 0) {
+      fotoPredeterminada;
       blanco();
     } else {
+      fotoPredeterminada;
       azul();
     }
   }, 500);
