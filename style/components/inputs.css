@@ -32,6 +32,7 @@
   left: 0;
   z-index: 2;
   outline: none;
+  caret-color: #555555; /*cambia color de | de texto*/
 }
 
 .back_usuario,

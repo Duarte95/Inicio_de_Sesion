@@ -1,2 +1,6 @@
-
-
+.titulo::selection,
+.labels::selection,
+.creditos::selection {
+  color: white;
+  background-color: #555555;
+}

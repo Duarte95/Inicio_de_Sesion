@@ -25,7 +25,9 @@
         <div class="background_inicio">
           <h1 class="titulo">Iniciar Sesion</h1>
           <form class="formulario" action="./html/ingreso.htm">
-            <div class="contenedor_foto"><div class="foto"></div></div>
+            <div class="contenedor_foto">
+              <div class="foto" data-foto></div>
+            </div>
             <label class="labels" for="usuario">User</label>
             <div class="contenedor_usuario">
               <input
@@ -34,7 +36,6 @@
                 type="text"
                 autocomplete="off"
                 data-usuario
-                required
               />
               <div class="back_usuario">
                 <div class="back"></div>
@@ -48,7 +49,6 @@
                 type="password"
                 autocomplete="off"
                 data-clave
-                required
               />
               <div class="back_clave">
                 <div class="back"></div>
