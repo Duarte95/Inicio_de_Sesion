@@ -13,7 +13,7 @@
 }
 
 .foto {
-  background-image: url(../../assets/usuario.png);
+  background-image: url(../../assets/predeterminado/usuario.png);
   background-repeat: no-repeat;
   background-position: 0px 12px;
   background-size: cover;
