@@ -97,7 +97,7 @@ function iniciarSesion() {
         usuario.usuario === user.value && usuario.clave === pass.value
     );
     if (usuarioEncontrado) {
-      window.location.href = "../html/ingreso.html";
+      window.location.href = "./html/ingreso.html";
     } else {
       limpiar();
       msgVisible("block");
@@ -119,5 +119,3 @@ boton.addEventListener("click", (event) => {
   iniciarSesion();
 });
 ////////////////////////////
-
-//corregir error que si no muestra imagen no entra asi este correcta la clave
