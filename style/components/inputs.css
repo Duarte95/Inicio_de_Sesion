@@ -1,7 +1,7 @@
 .labels {
   font-family: system-ui;
   font-weight: bold;
-  color: #555555;
+  color: var(--color-texto);
   align-self: start;
   letter-spacing: 3px;
   margin: 0 0 15px 5px;
@@ -23,8 +23,8 @@
   border-style: none;
   font-weight: bold;
   font-family: system-ui;
-  background-color: #292929;
-  color: #555555;
+  background-color: var(--bkgnd-pagina);
+  color: var(--color-texto);
   box-sizing: border-box;
   position: absolute;
   text-indent: 10px;
@@ -32,7 +32,7 @@
   left: 0;
   z-index: 2;
   outline: none;
-  caret-color: #555555; /*cambia color de | de texto*/
+  caret-color: var(--color-texto); /*cambia color de | de texto*/
 }
 
 .back_usuario,
