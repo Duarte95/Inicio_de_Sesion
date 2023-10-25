@@ -30,7 +30,7 @@ const regex = /^(?=(?:[^A-Z]*[A-Z]){1})(?=(?:\D*\d){2})[A-Za-z\d]{1,10}$/;
 
 //-FOTO PREDETERMINADA-//
 const fotoPredeterminada = () => {
-  foto.style.backgroundImage = "url(../assets/predeterminado/usuario.png)";
+  foto.style.backgroundImage = "url(../assets/img/usuario.png)";
   foto.style.filter = "invert()";
   foto.style.backgroundPosition = "0px 12px";
 };
