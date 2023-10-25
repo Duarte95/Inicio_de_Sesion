@@ -7,12 +7,12 @@ export const cuentas = [
   {
     usuario: "sarai",
     clave: "Centeno98",
-    foto: "../assets/usuarios/Sariangel.png",
+    foto: "../../assets/usuarios/Sariangel.png",
   },
   {
     usuario: "antony",
     clave: "Duarte95",
-    foto: "../assets/usuarios/FeNoXs.jpg",
+    foto: "../../assets/usuarios/FeNoXs.jpg",
   },
 ];
 
