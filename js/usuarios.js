@@ -1,9 +1,8 @@
-import foto1 from "/assets/usuarios/andy.jpg";
 export const cuentas = [
   {
     usuario: "andy",
     clave: "Yaguaran94",
-    foto: foto1,
+    foto: "/assets/usuarios/andy.jpg",
   },
   {
     usuario: "sarai",
