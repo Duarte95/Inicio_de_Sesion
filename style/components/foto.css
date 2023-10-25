@@ -20,6 +20,5 @@
   filter: invert();
   box-sizing: border-box;
   overflow: hidden;
-  transform-origin: center center;
-  transition: transform 0.7s ease;
+  transition: 0.7s ease;
 }
