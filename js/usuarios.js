@@ -2,17 +2,17 @@ export const cuentas = [
   {
     usuario: "andy",
     clave: "Yaguaran94",
-    foto: "../../assets/usuarios/Yaguaran.png",
+    foto: "./Inicio_de_Sesion/assets/usuarios/Yaguaran.png",
   },
   {
     usuario: "sarai",
     clave: "Centeno98",
-    foto: "../../assets/usuarios/Sariangel.png",
+    foto: "./Inicio_de_Sesion//assets/usuarios/Sariangel.png",
   },
   {
     usuario: "antony",
     clave: "Duarte95",
-    foto: "../../assets/usuarios/FeNoXs.png",
+    foto: "./Inicio_de_Sesion//assets/usuarios/FeNoXs.png",
   },
 ];
 
