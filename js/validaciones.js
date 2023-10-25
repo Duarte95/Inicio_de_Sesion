@@ -93,7 +93,8 @@ function iniciarSesion() {
     }, 3000);
   } else {
     const usuarioEncontrado = cuentas.find(
-      (usuario) => (usuario.usuario === usuario.clave) === pass.value
+      (usuario) =>
+        usuario.usuario === user.value && usuario.clave === pass.value
     );
     if (usuarioEncontrado) {
       window.location.href = "../html/ingreso.html";
