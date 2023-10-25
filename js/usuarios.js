@@ -1,18 +1,19 @@
+import foto1 from "/assets/usuarios/andy.jpg";
 export const cuentas = [
   {
     usuario: "andy",
     clave: "Yaguaran94",
-    foto: "/assets/usuarios/andy.jpg",
+    foto: foto1,
   },
   {
     usuario: "sarai",
     clave: "Centeno98",
-    foto: "../assets/usuarios/sarai.png",
+    foto: "/assets/usuarios/sarai.png",
   },
   {
     usuario: "antony",
     clave: "Duarte95",
-    foto: "../assets/usuarios/antony.jpg",
+    foto: "/assets/usuarios/antony.jpg",
   },
 ];
 
