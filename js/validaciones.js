@@ -85,7 +85,7 @@ function iniciarSesion() {
     }, 3000);
   } else if (user.value === "" || pass.value === "") {
     msgVisible("block");
-    msgError("Los Campos no deben estar vacios");
+    msgError("Los campos no deben estar vacios");
     setTimeout(rojo, 500);
     setTimeout(() => {
       msgVisible("none");
