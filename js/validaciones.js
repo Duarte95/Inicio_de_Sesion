@@ -30,7 +30,7 @@ const regex = /^(?=(?:[^A-Z]*[A-Z]){1})(?=(?:\D*\d){2})[A-Za-z\d]{1,10}$/;
 
 //-FOTO PREDETERMINADA-//
 const fotoPredeterminada = () => {
-  foto.style.backgroundImage = "url(Inicio_de_Sesion/assets/usuario.png)";
+  foto.style.backgroundImage = "url(../assets/predeterminado/usuario.png)";
   foto.style.filter = "invert()";
   foto.style.backgroundPosition = "0px 12px";
 };
@@ -96,7 +96,7 @@ function iniciarSesion() {
       (usuario) => (usuario.usuario === usuario.clave) === pass.value
     );
     if (usuarioEncontrado) {
-      window.location.href = "Inicio_de_Sesion/html/ingreso.html";
+      window.location.href = "../html/ingreso.html";
     } else {
       limpiar();
       msgVisible("block");
@@ -118,3 +118,5 @@ boton.addEventListener("click", (event) => {
   iniciarSesion();
 });
 ////////////////////////////
+
+//corregir error que si no muestra imagen no entra asi este correcta la clave
