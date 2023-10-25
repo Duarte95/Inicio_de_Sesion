@@ -96,7 +96,7 @@ function iniciarSesion() {
       (usuario) => (usuario.usuario === usuario.clave) === pass.value
     );
     if (usuarioEncontrado) {
-      window.location.href = "./Inicio_de_Sesion/html/ingreso.html";
+      window.location.href = "Inicio_de_Sesion/html/ingreso.html";
     } else {
       limpiar();
       msgVisible("block");
