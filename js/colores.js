@@ -1,7 +1,9 @@
 //-BOTON-//
 export const boton = document.querySelector("[data-boton]");
+
 //-FOTO-//
-const foto = document.querySelector(".contenedor_foto");
+const fotoCont = document.querySelector(".contenedor_foto");
+
 //-DEGRADADOS-//
 const contColor = document.querySelector(".contenido_color");
 const back = document.querySelectorAll(".back");
@@ -21,8 +23,8 @@ export function azul() {
   boton.style.color = "white";
 
   //-FOTO-//
-  foto.style.border = "3px solid var(--gradient-end)";
-  foto.style.boxShadow = "0 0px 10px 2px var(--gradient-start)";
+  fotoCont.style.border = "3px solid var(--gradient-end)";
+  fotoCont.style.boxShadow = "0 0px 10px 2px var(--gradient-start)";
 
   //-DEGRADADO-//
   contColor.style.background =
@@ -48,8 +50,8 @@ export function blanco() {
   boton.style.color = "black";
 
   //-FOTO-//
-  foto.style.border = "3px solid white";
-  foto.style.boxShadow = "0 0px 10px 2px white";
+  fotoCont.style.border = "3px solid white";
+  fotoCont.style.boxShadow = "0 0px 10px 2px white";
 
   //-DEGRADADO-//
   contColor.style.background = "white";
@@ -73,8 +75,8 @@ export function verde() {
   boton.style.color = "black";
 
   //-FOTO-//
-  foto.style.border = "3px solid var(--gradient2-end)";
-  foto.style.boxShadow = "0 0px 10px 2px var(--gradient2-start)";
+  fotoCont.style.border = "3px solid var(--gradient2-end)";
+  fotoCont.style.boxShadow = "0 0px 10px 2px var(--gradient2-start)";
 
   //-DEGRADADO-//
   contColor.style.background =
@@ -101,8 +103,8 @@ export function rojo() {
   boton.style.color = "white";
 
   //-FOTO-//
-  foto.style.border = "3px solid var(--gradient3-end)";
-  foto.style.boxShadow = "0 0px 10px 2px var(--gradient3-start)";
+  fotoCont.style.border = "3px solid var(--gradient3-end)";
+  fotoCont.style.boxShadow = "0 0px 10px 2px var(--gradient3-start)";
 
   //-DEGRADADO-//
   contColor.style.background =

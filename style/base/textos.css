@@ -1,6 +1,8 @@
 .msg::selection,
 .titulo::selection,
 .labels::selection,
+.usuario::selection,
+.clave::selection,
 .creditos::selection {
   color: white;
   background-color: #555555;
