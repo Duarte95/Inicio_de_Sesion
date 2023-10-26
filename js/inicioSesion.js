@@ -44,7 +44,7 @@ export function iniciarSesion() {
                 usuario.usuario === user.value && usuario.clave === pass.value
         );
         if (usuarioEncontrado) {
-            window.location.href = "../html/ingreso.html";
+            window.location.href = "html/ingreso.html";
         } else {
             limpiar();
             msgVisible("block");

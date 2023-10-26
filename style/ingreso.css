@@ -18,7 +18,9 @@
 }
 
 .valido {
-  width: 80px;
-  height: 80px;
-  border: 3px solid var(--gradient2-end);
+  width: 35px;
+  height: 60px;
+  border-right: 5px solid var(--gradient2-end);
+  border-bottom: 5px solid var(--gradient2-end);
+  transform: rotate(35deg);
 }

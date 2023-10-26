@@ -6,7 +6,7 @@ export const foto = document.querySelector("[data-foto]");
 
 //-FOTO PREDETERMINADA-//
 export const fotoPredeterminada = () => {
-  foto.style.backgroundImage = "url(../assets/default/usuario.png)";
+  foto.style.backgroundImage = "url(assets/default/usuario.png)";
   foto.style.filter = "invert()";
   foto.style.backgroundPosition = "0px 12px";
 };
