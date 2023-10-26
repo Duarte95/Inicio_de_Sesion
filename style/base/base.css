@@ -1,7 +1,7 @@
 * {
   --color-texto: #555555;
   --bkgnd-pagina: #292929;
-  --gradient-start: #6db1ff;
+  --gradient-start: #8ec3ff;
   --gradient-end: #014ba0;
   --gradient2-start: #8dff8d;
   --gradient2-end: #01fc01;
@@ -37,31 +37,7 @@ body {
 }
 
 .creditos {
-  font-family: system-ui;
-  font-weight: bold;
-  color: var(--color-texto);
   text-align: center;
-}
-
-@keyframes rotar {
-  0% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(72deg);
-  }
-  40% {
-    transform: rotate(144deg);
-  }
-  60% {
-    transform: rotate(216deg);
-  }
-  80% {
-    transform: rotate(288deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /*

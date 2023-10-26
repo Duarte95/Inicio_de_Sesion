@@ -1,0 +1,57 @@
+.background_color,
+.back_boton,
+.back_usuario,
+.back_clave {
+  transition: 2s ease;
+}
+
+.contenido_color,
+.contenedor_foto,
+.foto,
+.contenedor_msg,
+.back,
+.back2 {
+  transition: 1s ease;
+}
+
+.contenido_color,
+.back,
+.back2 {
+  animation: rotar 2s linear infinite;
+}
+
+@keyframes rotar {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    top: -40px;
+    opacity: 0;
+  }
+  50% {
+    top: 15px;
+    opacity: 1;
+  }
+  100% {
+    top: -40px;
+    opacity: 0;
+  }
+}

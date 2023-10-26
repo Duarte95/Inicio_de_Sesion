@@ -11,19 +11,12 @@
   border-radius: 15px;
   border-style: none;
   color: white;
-  font-weight: bold;
   font-size: 14px;
-  background: linear-gradient(0deg, var(--gradient-start), var(--gradient-end));
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
   cursor: pointer;
-}
-
-.boton_entrar:active {
-  color: #292929;
-  background-color: #555555;
 }
 
 .back_boton {
@@ -35,17 +28,11 @@
   position: absolute;
   top: -2px;
   left: -2px;
-  box-shadow: 0 0px 10px 2px var(--gradient-start);
-  overflow: hidden;
   z-index: 1;
-  transition: 2s ease;
 }
 
 .back2 {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: linear-gradient(0deg, var(--gradient-start), var(--gradient-end));
-  animation: rotar 2s linear infinite;
-  transition: 1s ease;
 }

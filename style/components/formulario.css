@@ -1,6 +1,5 @@
 .titulo {
   margin: 0 0 20px 0;
-  color: var(--color-texto);
 }
 
 .inicio_sesion {
@@ -20,7 +19,6 @@
   left: calc(50% - 155px);
   box-shadow: 0 0px 15px 2px var(--gradient-start);
   overflow: hidden;
-  transition: 2s ease;
 }
 
 .contenido_color {
@@ -29,8 +27,6 @@
   border-radius: 50%;
   clip-path: polygon(100% 0%, 100% 100%, 50% 50%);
   background: linear-gradient(0deg, var(--gradient-end), var(--gradient-start));
-  animation: rotar 2s linear infinite;
-  transition: 1s ease;
 }
 
 .back_inicio {
@@ -40,28 +36,23 @@
   top: calc(50% - 251px);
   left: calc(50% - 151px);
   position: absolute;
-  background-color: var(--bkgnd-pagina);
   box-shadow: 0 0 4px 2px rgba(29, 29, 29, 0.514);
   z-index: 2;
 }
 
 .background_inicio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 272px;
   height: 472px;
   border-radius: 12px;
   position: absolute;
   top: calc(50% - 236px);
   left: calc(50% - 136px);
-  background-color: var(--bkgnd-pagina);
   box-shadow: 0 0 7px 3px rgba(19, 19, 19, 0.637);
   z-index: 1;
 }
 
-.formulario {
+.formulario,
+.background_inicio {
   display: flex;
   flex-direction: column;
   justify-content: center;

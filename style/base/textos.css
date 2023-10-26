@@ -3,7 +3,22 @@
 .labels::selection,
 .usuario::selection,
 .clave::selection,
+.boton_entrar::selection,
+.texto::selection,
 .creditos::selection {
   color: white;
   background-color: #555555;
+}
+
+.msg,
+.titulo,
+.labels,
+.usuario,
+.clave,
+.boton_entrar,
+.texto,
+.creditos {
+  font-family: system-ui;
+  font-weight: bold;
+  color: var(--color-texto);
 }

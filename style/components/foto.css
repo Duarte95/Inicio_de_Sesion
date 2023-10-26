@@ -6,10 +6,8 @@
 }
 
 .contenedor_foto {
-  box-shadow: 0 0px 10px 2px var(--gradient-start);
   border: 3px solid var(--gradient-end);
   margin-bottom: 15px;
-  transition: 1s ease;
 }
 
 .foto {
@@ -19,6 +17,4 @@
   background-size: cover;
   filter: invert();
   box-sizing: border-box;
-  overflow: hidden;
-  transition: 0.7s ease;
 }

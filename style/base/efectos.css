@@ -1,0 +1,20 @@
+.boton_entrar,
+.back,
+.back2 {
+  background: linear-gradient(0deg, var(--gradient-start), var(--gradient-end));
+}
+
+.back_boton,
+.contenedor_foto,
+.back_usuario,
+.back_clave {
+  box-shadow: 0 0px 10px 2px var(--gradient-start);
+  overflow: hidden;
+}
+
+.back_inicio,
+.background_inicio,
+.usuario,
+.clave {
+  background-color: var(--bkgnd-pagina);
+}
