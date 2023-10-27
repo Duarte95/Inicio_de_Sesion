@@ -11,7 +11,7 @@
 .icono_mostrar_ocultar .icono {
   width: 20px;
   height: auto;
-  filter: invert();
+  filter: invert() brightness(-15);
 }
 .ocultar {
   display: none;
