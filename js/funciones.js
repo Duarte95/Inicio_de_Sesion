@@ -1,4 +1,5 @@
 import { user, pass } from "./validaciones.js";
+import { togglePasswordVisibility } from "./mostrarOcultar.js";
 
 const msg = document.querySelector("[data-span]");
 const contMsg = document.querySelector("[data-msg]");

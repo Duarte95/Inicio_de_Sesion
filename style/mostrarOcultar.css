@@ -1,0 +1,21 @@
+.icono_mostrar_ocultar {
+  display: grid;
+  place-content: center;
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 9px);
+  cursor: pointer;
+  z-index: 3;
+}
+
+.icono_mostrar_ocultar .icono {
+  width: 20px;
+  height: auto;
+  filter: invert();
+}
+.ocultar {
+  display: none;
+}
+.mostrar {
+  display: block;
+}

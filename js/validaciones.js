@@ -2,6 +2,7 @@ import { azul, verde, blanco, boton } from "./colores.js";
 import { cuentas } from "./usuarios.js";
 import { fotoPredeterminada, foto } from "./funciones.js";
 import { iniciarSesion } from "./inicioSesion.js";
+import { togglePasswordVisibility } from "./mostrarOcultar.js";
 
 //-INPUTS-//
 export const user = document.querySelector("[data-usuario]");
@@ -40,6 +41,13 @@ user.addEventListener("input", () => {
   }, 500);
 });
 ////////////////////////////
+
+//-EVENTO MOSTRAR/OCULTAR-//
+const mostrarOcultar = document.querySelector(".icono_mostrar_ocultar");
+
+mostrarOcultar.addEventListener("click", ()=>{
+  togglePasswordVisibility();
+})
 
 //////-EVENTO CLICK-///////
 boton.addEventListener("click", (event) => {
