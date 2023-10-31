@@ -15,13 +15,3 @@ export const cuentas = [
     foto: "assets/usuarios/antony.jpg",
   },
 ];
-
-/*
-NOTA:
-
-boton.addEventListener("mouseover", (e) => {});
-funcion para detectar hover
-
-boton.addEventListener("mouseout", (e) => {});
-funcion para detectar salida del mouse del hover
-*/
