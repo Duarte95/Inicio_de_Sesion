@@ -54,6 +54,7 @@ const mostrarOcultar = document.querySelector(".icono_mostrar_ocultar");
 mostrarOcultar.addEventListener("click", () => {
   togglePasswordVisibility();
 })
+////////////////////////////
 
 //////-EVENTO CLICK-///////
 boton.addEventListener("click", (event) => {
