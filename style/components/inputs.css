@@ -28,6 +28,10 @@
   caret-color: var(--color-texto); /*cambia color de | de texto*/
 }
 
+.usuario {
+  text-transform: lowercase;
+}
+
 .back_usuario,
 .back_clave {
   display: grid;

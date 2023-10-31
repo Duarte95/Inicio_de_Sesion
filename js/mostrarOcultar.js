@@ -1,7 +1,9 @@
-import {pass} from "./validaciones.js"
+import { pass } from "./validaciones.js";
+
+export const mostrarIcono = document.querySelector(".mostrar");
+export const ocultarIcono = document.querySelector(".ocultar");
+
 export function togglePasswordVisibility() {
-  const mostrarIcono = document.querySelector(".mostrar");
-  const ocultarIcono = document.querySelector(".ocultar");
 
   if (pass.type === "password") {
     pass.type = "text";

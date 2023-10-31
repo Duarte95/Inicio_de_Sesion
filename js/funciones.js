@@ -1,8 +1,6 @@
 import { user, pass } from "./validaciones.js";
-import { togglePasswordVisibility } from "./mostrarOcultar.js";
+import { rojo, azul } from "./colores.js";
 
-const msg = document.querySelector("[data-span]");
-const contMsg = document.querySelector("[data-msg]");
 export const foto = document.querySelector("[data-foto]");
 
 //-FOTO PREDETERMINADA-//
@@ -21,10 +19,24 @@ export function limpiar() {
 ////////////////////
 
 //-FUNCIONES PARA MENSAJE-//
-export function msgError(error) {
-  msg.innerHTML = error;
-}
-export function msgVisible(visible) {
-  contMsg.style.display = visible;
+export function msgError(error, color = azul) {
+
+  const msg = document.querySelector("[data-span]");
+  const contMsg = document.querySelector("[data-msg]");
+
+  setTimeout(() => {
+    rojo();
+    msg.innerHTML = error;
+    contMsg.style.display = "block";
+  }
+    , 500);
+
+  setTimeout(() => {
+    if (typeof color === 'function') {
+      color();
+    }
+    msg.innerHTML = "";
+    contMsg.style.display = "none";
+  }, 3000);
 }
 ////////////////////////////

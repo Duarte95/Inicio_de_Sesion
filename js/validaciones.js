@@ -3,6 +3,7 @@ import { cuentas } from "./usuarios.js";
 import { fotoPredeterminada, foto } from "./funciones.js";
 import { iniciarSesion } from "./inicioSesion.js";
 import { togglePasswordVisibility } from "./mostrarOcultar.js";
+import { mostrarIcono, ocultarIcono } from "./mostrarOcultar.js";
 
 //-INPUTS-//
 export const user = document.querySelector("[data-usuario]");
@@ -21,6 +22,7 @@ const regex = /^(?=(?:[^A-Z]*[A-Z]){1})(?=(?:\D*\d){2})[A-Za-z\d]{1,10}$/;
 
 ///////-EVENTO INPUT-///////
 user.addEventListener("input", () => {
+  user.value = user.value.replace(/\s/g, "");
   const cuentaUsuario = validarUsuario();
   const fotoUsuario = () => {
     foto.style.backgroundImage = `url(${cuentaUsuario.foto})`;
@@ -40,12 +42,16 @@ user.addEventListener("input", () => {
     }
   }, 500);
 });
+
+pass.addEventListener("input", () => {
+  pass.value = pass.value.replace(/\s/g, "");
+})
 ////////////////////////////
 
 //-EVENTO MOSTRAR/OCULTAR-//
 const mostrarOcultar = document.querySelector(".icono_mostrar_ocultar");
 
-mostrarOcultar.addEventListener("click", ()=>{
+mostrarOcultar.addEventListener("click", () => {
   togglePasswordVisibility();
 })
 
@@ -53,5 +59,10 @@ mostrarOcultar.addEventListener("click", ()=>{
 boton.addEventListener("click", (event) => {
   event.preventDefault();
   iniciarSesion();
+
+  if (pass.type = "password") {
+    mostrarIcono.style.display = "block";
+    ocultarIcono.style.display = "none";
+  }
 });
 ////////////////////////////
