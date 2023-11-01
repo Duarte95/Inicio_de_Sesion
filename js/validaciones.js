@@ -62,7 +62,6 @@ mostrarOcultar.addEventListener("click", () => {
 ////////////////////////////
 
 //////-EVENTO CLICK-///////
-//let ejecutando = false; //Variable de control
 boton.addEventListener("click", (event) => {
   event.preventDefault();
   iniciarSesion();
@@ -70,18 +69,5 @@ boton.addEventListener("click", (event) => {
     mostrarIcono.style.display = "block";
     ocultarIcono.style.display = "none";
   }
-  /*
-  if (!ejecutando) {
-    ejecutando = true; // Establece la variable de control en true
-    // Aquí coloca el código de tu función
-    iniciarSesion()
-      .then(() => {
-        ejecutando = false; // Establece la variable de control en false al completar la función
-      })
-      .catch(() => {
-        ejecutando = false; // Asegúrate de restablecer la variable de control incluso en caso de error
-      });
-  }
-  */
 });
 ////////////////////////////

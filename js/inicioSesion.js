@@ -14,8 +14,7 @@ export function iniciarSesion() {
 
     } else if (user.value === "" && pass.value.length > 0) {
         msgError("Debes ingresar un Usuario.");
-        setTimeout(limpiar, 500); //temporal hasta activar pop
-        //poner un popup
+        setTimeout(limpiar, 500);
 
     } else if (user.value === "" && pass.value === "") {
         msgError("Los campos no deben estar vacios.");
