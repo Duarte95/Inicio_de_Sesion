@@ -20,9 +20,8 @@ export const validarUsuario = () => {
 const regex = /^(?=(?:[^A-Z]*[A-Z]){1})(?=(?:\D*\d){2})[A-Za-z\d]{1,10}$/;
 //////////////////////
 
-///////-EVENTO INPUT-///////
-user.addEventListener("input", () => {
-  user.value = user.value.replace(/\s/g, "");
+//-FUNCION DE VALIDACION-//
+function validUser() {
   const cuentaUsuario = validarUsuario();
   const fotoUsuario = () => {
     foto.style.backgroundImage = `url(${cuentaUsuario.foto})`;
@@ -41,6 +40,12 @@ user.addEventListener("input", () => {
       azul();
     }
   }, 500);
+}
+
+///////-EVENTO INPUT-///////
+user.addEventListener("input", () => {
+  user.value = user.value.replace(/\s/g, "");
+  validUser();
 });
 
 pass.addEventListener("input", () => {
@@ -57,13 +62,26 @@ mostrarOcultar.addEventListener("click", () => {
 ////////////////////////////
 
 //////-EVENTO CLICK-///////
+//let ejecutando = false; //Variable de control
 boton.addEventListener("click", (event) => {
   event.preventDefault();
   iniciarSesion();
-
   if (pass.type = "password") {
     mostrarIcono.style.display = "block";
     ocultarIcono.style.display = "none";
   }
+  /*
+  if (!ejecutando) {
+    ejecutando = true; // Establece la variable de control en true
+    // Aquí coloca el código de tu función
+    iniciarSesion()
+      .then(() => {
+        ejecutando = false; // Establece la variable de control en false al completar la función
+      })
+      .catch(() => {
+        ejecutando = false; // Asegúrate de restablecer la variable de control incluso en caso de error
+      });
+  }
+  */
 });
 ////////////////////////////
