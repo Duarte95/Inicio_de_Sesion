@@ -12,7 +12,7 @@ export const pass = document.querySelector("[data-clave]");
 
 //-VALIDACION DE USUARIO-//
 export const validarUsuario = () => {
-  return cuentas.find((cuenta) => cuenta.usuario === user.value); //valor .some()
+  return cuentas.find((cuenta) => cuenta.usuario === user.value.toLowerCase()); //valor .some()
 };
 ///////////////////////////
 

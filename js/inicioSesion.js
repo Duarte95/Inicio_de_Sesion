@@ -22,7 +22,7 @@ export function iniciarSesion() {
     } else {
         const usuarioEncontrado = cuentas.find(
             (usuario) =>
-                usuario.usuario === user.value && usuario.clave === pass.value
+                usuario.usuario === user.value.toLowerCase() && usuario.clave === pass.value
         );
         if (usuarioEncontrado) {
             window.location.href = "html/ingreso.html";
